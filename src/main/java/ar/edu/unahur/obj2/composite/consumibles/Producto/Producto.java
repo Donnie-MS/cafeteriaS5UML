@@ -10,6 +10,7 @@ public abstract class Producto implements Consumible{
         this.nombre = nombre;
         this.precioBase = precioBase;
     }
+    @Override
     public Double costo() {
         return precioBase;
     }

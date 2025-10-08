@@ -29,6 +29,6 @@ public class Combo implements Consumible{
     }
 
     public Double costo() {
-        return precioBase;
+        return consumibles.stream().mapToDouble(consumible -> consumible.costo()).sum();
     }
 }
